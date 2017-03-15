@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/josephvarghese/code/A3K2k17/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
+        <dex dex="/Users/josephvarghese/code/A3K2k17/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_4975575e58b8200668bea059dcf869b071fe5bf0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/josephvarghese/code/A3K2k17/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="33a8298aa08b5eecd814556b978921ec56f73b54">
+        <dex dex="/Users/josephvarghese/code/A3K2k17/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_416dc57c83ff12c8a76a3c764ceed3b2107735df/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/josephvarghese/code/A3K2k17/app/libs/profile-expression-kit-android-v1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="95faeecda4cff770dd09e692651bb129fedc64bc">
+        <dex dex="/Users/josephvarghese/code/A3K2k17/app/build/intermediates/transforms/dex/debug/folders/1000/2/profile-expression-kit-android-v1.0_29923ec6e8f4e5d434a792c6feef7e3a539b1fec/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/josephvarghese/code/A3K2k17/app/libs/profile-expression-kit-android-v1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="95faeecda4cff770dd09e692651bb129fedc64bc">
+        <dex dex="/Users/josephvarghese/code/A3K2k17/app/build/intermediates/transforms/dex/debug/folders/1000/2/profile-expression-kit-android-v1.0_29923ec6e8f4e5d434a792c6feef7e3a539b1fec/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/josephvarghese/code/A3K2k17/app/libs/YouTubeAndroidPlayerApi.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3c4f96ff493456651cc7bdb0b47e10eb25545a16">
+        <dex dex="/Users/josephvarghese/code/A3K2k17/app/build/intermediates/transforms/dex/debug/folders/1000/2/YouTubeAndroidPlayerApi_529614c106594a759d00bad5e322c02917548343/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/josephvarghese/code/A3K2k17/app/libs/YouTubeAndroidPlayerApi.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3c4f96ff493456651cc7bdb0b47e10eb25545a16">
+        <dex dex="/Users/josephvarghese/code/A3K2k17/app/build/intermediates/transforms/dex/debug/folders/1000/2/YouTubeAndroidPlayerApi_529614c106594a759d00bad5e322c02917548343/classes.dex" />
+    </item>
+
+</items>
