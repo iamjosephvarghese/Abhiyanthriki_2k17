@@ -5,7 +5,6 @@ import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Typeface;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
@@ -17,6 +16,7 @@ import android.widget.Toast;
 public class HomeActivity extends AppCompatActivity {
 
     final private int STORAGE_PERMISSION_CODE = 23;
+    Button fbbutton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,6 +28,7 @@ public class HomeActivity extends AppCompatActivity {
         Button fbbutton = (Button)findViewById(R.id.fbbutton);
         Button deadButton = (Button)findViewById(R.id.deadbutton);
         Button sitebutton = (Button)findViewById(R.id.sitebutton);
+        Button eventsButton = (Button)findViewById(R.id.eventsbutton);
 
 
 
@@ -58,6 +59,7 @@ public class HomeActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent deadIntent = new Intent(HomeActivity.this,Deadlock.class);
                 startActivity(deadIntent);
+//change back to deadlock web view ..........................................
 
             }
         });
@@ -65,11 +67,23 @@ public class HomeActivity extends AppCompatActivity {
         sitebutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW,
-                Uri.parse("http://www.a3k.in"));
-                startActivity(browserIntent);
+                String link = "https://a3k.in/reg";
+                Intent regIntent = new Intent(HomeActivity.this,Web.class);
+                regIntent.putExtra("weblink",link);
+                startActivity(regIntent);
+
             }
         });
+
+        eventsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent regIntent = new Intent(HomeActivity.this,Events.class);
+                startActivity(regIntent);
+            }
+        });
+
+
 
 
 
@@ -80,6 +94,7 @@ public class HomeActivity extends AppCompatActivity {
         fbbutton.setTypeface(bebas);
         deadButton.setTypeface(bebas);
         sitebutton.setTypeface(bebas);
+        eventsButton.setTypeface(bebas);
 
 
 

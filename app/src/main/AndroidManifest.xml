@@ -14,7 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="roundmelon.jv.a3k.MainActivity"
+            android:name=".MainActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,17 +23,17 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="roundmelon.jv.a3k.Upload"
+            android:name=".Upload"
             android:screenOrientation="portrait" />
         <activity
-            android:name="roundmelon.jv.a3k.HomeActivity"
+            android:name=".HomeActivity"
             android:label="@string/title_activity_home"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
-        <activity android:name="roundmelon.jv.a3k.Youtube" />
-        <activity android:name="roundmelon.jv.a3k.Try" />
+        <activity android:name=".Youtube" />
+        <activity android:name=".Try" />
         <activity
-            android:name="roundmelon.jv.a3k.Fb"
+            android:name=".Fb"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
 
         <meta-data
@@ -50,8 +50,14 @@
             android:authorities="com.facebook.app.FacebookContentProvider1798692413786532"
             android:exported="true" />
 
-        <activity android:name="roundmelon.jv.a3k.Badge" />
-        <activity android:name="roundmelon.jv.a3k.Deadlock"></activity>
+        <activity android:name=".Badge" />
+        <activity android:name=".Deadlock" />
+        <activity
+            android:name=".Edit"
+            android:label="@string/title_activity_edit"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".Events" />
+        <activity android:name=".Web"></activity>
     </application>
 
 </manifest>

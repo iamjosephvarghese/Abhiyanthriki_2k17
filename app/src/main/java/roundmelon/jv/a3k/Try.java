@@ -1,13 +1,11 @@
 package roundmelon.jv.a3k;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.FrameLayout;
-import android.widget.LinearLayout;
 
 import com.yalantis.guillotine.animation.GuillotineAnimation;
 
@@ -32,7 +30,7 @@ public class Try extends AppCompatActivity {
         setContentView(R.layout.activity_try);
         ButterKnife.bind(this);
 
-        LinearLayout profile_group = (LinearLayout)findViewById(R.id.profile_group);
+
 
         if (toolbar != null) {
             setSupportActionBar(toolbar);
@@ -47,14 +45,6 @@ public class Try extends AppCompatActivity {
                 .setActionBarViewForAnimation(toolbar)
                 .setClosedOnStart(true)
                 .build();
-
-        profile_group.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent q = new Intent(Try.this,HomeActivity.class);
-                startActivity(q);
-            }
-        });
 
     }
 }

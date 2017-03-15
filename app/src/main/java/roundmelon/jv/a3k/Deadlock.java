@@ -18,7 +18,6 @@ public class Deadlock extends AppCompatActivity {
 
         webView = (WebView)findViewById(R.id.webView);
         webView.setWebViewClient(new MyBrowser());
-
         webView.getSettings().setLoadsImagesAutomatically(true);
         webView.getSettings().setJavaScriptEnabled(true);
         webView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
@@ -26,23 +25,6 @@ public class Deadlock extends AppCompatActivity {
         webView.getSettings().setAppCacheEnabled(true);
 
     }
-
-
-
-//    @Override
-//    public boolean onKeyDown(int keyCode, KeyEvent event) {
-//        if ((keyCode == KeyEvent.KEYCODE_BACK) && webView.canGoBack()) {
-//            webView.goBack();
-//            return true;
-//        }
-//        else
-//        {
-//            finish();
-//
-//        }
-//        return super.onKeyDown(keyCode, event);
-//    }
-
 
 
     private class MyBrowser extends WebViewClient {
