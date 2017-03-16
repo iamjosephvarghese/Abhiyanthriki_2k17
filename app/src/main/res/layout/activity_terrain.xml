@@ -7,7 +7,7 @@
     android:background="#4CE4B8"
     tools:context="roundmelon.jv.a3k.Terrain">
     <ListView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/listViewTerrain"
         android:layout_alignParentTop="true"

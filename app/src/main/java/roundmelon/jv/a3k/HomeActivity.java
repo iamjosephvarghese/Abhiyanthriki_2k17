@@ -57,7 +57,7 @@ public class HomeActivity extends AppCompatActivity {
         deadButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent deadIntent = new Intent(HomeActivity.this,Deadlock.class);
+                Intent deadIntent = new Intent(HomeActivity.this,SelfieGallery.class);
                 startActivity(deadIntent);
 //change back to deadlock web view ..........................................
 

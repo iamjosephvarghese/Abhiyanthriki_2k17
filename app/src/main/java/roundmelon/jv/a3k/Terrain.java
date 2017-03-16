@@ -3,6 +3,7 @@ package roundmelon.jv.a3k;
 import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.widget.ListView;
 
 import com.firebase.client.ChildEventListener;
@@ -59,6 +60,7 @@ public class Terrain extends AppCompatActivity {
                 resultRef.addChildEventListener(new ChildEventListener() {
                     @Override
                     public void onChildAdded(DataSnapshot dataSnapshot, String s) {
+                        Log.d("DEBUG","onChildAdded");
                         String res = dataSnapshot.getValue(String.class);
                         String pa[] = res.split("-");
                         pName[count] = pa[0];
@@ -112,7 +114,7 @@ public class Terrain extends AppCompatActivity {
 
     private void trigger() {
 
-
+        Log.d("DEBUG","Triggered");
         TerrainList adapter2 = new
                 TerrainList(Terrain.this,pName,pTime,dummy);
         listresult=(ListView)findViewById(R.id.listViewTerrain);

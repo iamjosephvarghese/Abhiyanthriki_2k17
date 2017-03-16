@@ -3,6 +3,7 @@ package roundmelon.jv.a3k;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Typeface;
 import android.graphics.drawable.BitmapDrawable;
 import android.net.Uri;
@@ -21,6 +22,8 @@ import com.facebook.login.LoginManager;
 import com.facebook.share.model.SharePhoto;
 import com.facebook.share.model.SharePhotoContent;
 import com.facebook.share.widget.ShareDialog;
+
+import java.io.ByteArrayOutputStream;
 
 public class Badge extends AppCompatActivity {
 
@@ -74,8 +77,18 @@ public class Badge extends AppCompatActivity {
 
                 ImageView imageView= (ImageView) findViewById(R.id.profileImage);
                 Bitmap image = ((BitmapDrawable)imageView.getDrawable()).getBitmap();
+
+                ByteArrayOutputStream stream = new ByteArrayOutputStream();
+                image.compress(Bitmap.CompressFormat.JPEG,20,stream);
+
+                byte[] bitmapdata = stream.toByteArray();
+
+
+
+                Bitmap pic = BitmapFactory.decodeByteArray(bitmapdata,0,bitmapdata.length);
+
                 SharePhoto photo = new SharePhoto.Builder()
-                        .setBitmap(image)
+                        .setBitmap(pic)
                         .build();
                 SharePhotoContent content = new SharePhotoContent.Builder()
                         .addPhoto(photo)
