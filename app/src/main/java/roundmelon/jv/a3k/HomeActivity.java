@@ -41,7 +41,7 @@ public class HomeActivity extends AppCompatActivity {
 
                 if(isWriteStorageAllowed()){
                     //If permission is already having then showing the toast
-                    // Toast.makeText(Upload.this,"You already have the permission",Toast.LENGTH_LONG).show();
+                    // Toast.makeText(Selfie.this,"You already have the permission",Toast.LENGTH_LONG).show();
                     //Existing the method with return
                     Intent fbIntent = new Intent(HomeActivity.this,Fb.class);
                     startActivity(fbIntent);

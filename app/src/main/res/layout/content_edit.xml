@@ -8,4 +8,51 @@
     tools:context="roundmelon.jv.a3k.Edit"
     tools:showIn="@layout/app_bar_edit">
 
+
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="395dp"
+        android:layout_height="300dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp">
+        <ViewFlipper
+            android:id="@+id/bckgrndViewFlipper1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <ImageView
+                android:id="@+id/bckgrndImageView7"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/a3klogo" />
+            <ImageView
+                android:id="@+id/bckgrndImageView6"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/a3k_long" />
+            <ImageView
+                android:id="@+id/bckgrndImageView5"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/a3klogo" />
+            <ImageView
+                android:id="@+id/bckgrndImageView4"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/a3k_long" />
+            <ImageView
+                android:id="@+id/bckgrndImageView3"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/a3klogo" />
+
+        </ViewFlipper>
+    </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>

@@ -27,7 +27,7 @@
             <ImageView
                 android:id="@+id/ae"
                 android:layout_width="100dp"
-                android:layout_height="150dp"
+                android:layout_height="200dp"
                 android:layout_marginLeft="40dp"
                 android:layout_marginTop="16dp"
                 android:background="#000"
@@ -38,7 +38,7 @@
             <ImageView
                 android:id="@+id/civil"
                 android:layout_width="100dp"
-                android:layout_height="150dp"
+                android:layout_height="200dp"
                 android:layout_marginRight="40dp"
                 android:layout_marginTop="8dp"
                 android:background="#000"
@@ -49,7 +49,7 @@
             <ImageView
                 android:id="@+id/cs"
                 android:layout_width="100dp"
-                android:layout_height="150dp"
+                android:layout_height="200dp"
                 android:layout_marginLeft="40dp"
                 android:layout_marginTop="8dp"
                 android:background="#000"
@@ -60,9 +60,9 @@
             <ImageView
                 android:id="@+id/ec"
                 android:layout_width="100dp"
-                android:layout_height="150dp"
+                android:layout_height="200dp"
                 android:layout_marginRight="40dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="-408dp"
                 android:background="#000"
                 android:src="@drawable/a3klogo"
                 app:layout_constraintRight_toRightOf="parent"
@@ -71,7 +71,7 @@
             <ImageView
                 android:id="@+id/eee"
                 android:layout_width="100dp"
-                android:layout_height="150dp"
+                android:layout_height="200dp"
                 android:layout_marginBottom="8dp"
                 android:layout_marginRight="40dp"
                 android:layout_marginTop="8dp"
@@ -84,7 +84,7 @@
             <ImageView
                 android:id="@+id/it"
                 android:layout_width="100dp"
-                android:layout_height="150dp"
+                android:layout_height="200dp"
                 android:layout_marginLeft="40dp"
                 android:layout_marginTop="8dp"
                 android:background="#000"
@@ -95,7 +95,7 @@
             <ImageView
                 android:id="@+id/mech"
                 android:layout_width="100dp"
-                android:layout_height="150dp"
+                android:layout_height="200dp"
                 android:layout_marginBottom="8dp"
                 android:layout_marginLeft="40dp"
                 android:layout_marginTop="8dp"
@@ -108,7 +108,7 @@
             <ImageView
                 android:id="@+id/gen"
                 android:layout_width="100dp"
-                android:layout_height="150dp"
+                android:layout_height="200dp"
                 android:layout_marginRight="40dp"
                 android:layout_marginTop="16dp"
                 android:background="#000"

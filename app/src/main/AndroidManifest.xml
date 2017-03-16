@@ -23,7 +23,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Upload"
+            android:name=".Selfie"
             android:screenOrientation="portrait" />
         <activity
             android:name=".HomeActivity"
@@ -57,7 +57,9 @@
             android:label="@string/title_activity_edit"
             android:theme="@style/AppTheme" />
         <activity android:name=".Events" />
-        <activity android:name=".Web"></activity>
+        <activity android:name=".Web" />
+        <activity android:name=".SelfieGallery" />
+        <activity android:name=".Terrain"></activity>
     </application>
 
 </manifest>

@@ -47,56 +47,56 @@ look site and update
 
 
         Glide.with(Events.this)
-                .load("https://firebasestorage.googleapis.com/v0/b/rset-63188.appspot.com/o/departments%2Faei.jpg?alt=media&token=b7878987-182a-4f58-b103-2994e12557ce")
+                .load("https://firebasestorage.googleapis.com/v0/b/rset-63188.appspot.com/o/departments%2Faei.jpg?alt=media&token=ede3a568-9d3c-4391-b8e9-cf1abf54a525")
                 .placeholder(R.drawable.a3klogo)
                 .override(150,200)
                 .diskCacheStrategy(DiskCacheStrategy.SOURCE)
                 .into(ae);
 
         Glide.with(Events.this)
-                .load("https://firebasestorage.googleapis.com/v0/b/rset-63188.appspot.com/o/departments%2Fce.jpg?alt=media&token=41ade3cb-2689-4f34-9aa3-ecdf40b7535a")
+                .load("https://firebasestorage.googleapis.com/v0/b/rset-63188.appspot.com/o/departments%2Fce.jpg?alt=media&token=cdd2143d-a024-4d75-9a3a-87ba9bb90530")
                 .placeholder(R.drawable.a3klogo)
                 .override(150,200)
                 .diskCacheStrategy(DiskCacheStrategy.SOURCE)
                 .into(civil);
 
         Glide.with(Events.this)
-                .load("https://firebasestorage.googleapis.com/v0/b/rset-63188.appspot.com/o/departments%2Fcs.jpg?alt=media&token=41591e2e-ebf4-4e85-9172-1e1fe71f069e")
+                .load("https://firebasestorage.googleapis.com/v0/b/rset-63188.appspot.com/o/departments%2Fcs.jpg?alt=media&token=96dbc3c6-ea1c-48ba-aa3c-42ea2b728f3c")
                 .placeholder(R.drawable.a3klogo)
                 .override(150,200)
                 .diskCacheStrategy(DiskCacheStrategy.SOURCE)
                 .into(cs);
 
         Glide.with(Events.this)
-                .load("https://firebasestorage.googleapis.com/v0/b/rset-63188.appspot.com/o/departments%2Fec.jpg?alt=media&token=d03a893b-cfaa-4cd4-9c75-ac7af5f154e2")
+                .load("https://firebasestorage.googleapis.com/v0/b/rset-63188.appspot.com/o/departments%2Fec.jpg?alt=media&token=9c100275-bb85-4123-aff4-aaeeed957cd9")
                 .placeholder(R.drawable.a3klogo)
                 .override(150,200)
                 .diskCacheStrategy(DiskCacheStrategy.SOURCE)
                 .into(ec);
 
         Glide.with(Events.this)
-                .load("https://firebasestorage.googleapis.com/v0/b/rset-63188.appspot.com/o/departments%2Feee.jpg?alt=media&token=893e30ab-0f59-4615-9363-44657af555d3")
+                .load("https://firebasestorage.googleapis.com/v0/b/rset-63188.appspot.com/o/departments%2Feee.jpg?alt=media&token=13fd22c0-5279-4f6a-844f-0e44c7301a3e")
                 .placeholder(R.drawable.a3klogo)
                 .override(150,200)
                 .diskCacheStrategy(DiskCacheStrategy.SOURCE)
                 .into(eee);
 
         Glide.with(Events.this)
-                .load("https://firebasestorage.googleapis.com/v0/b/rset-63188.appspot.com/o/departments%2Fit.jpg?alt=media&token=1a17eab1-f19e-4d81-a1af-c9509094e0c0")
+                .load("https://firebasestorage.googleapis.com/v0/b/rset-63188.appspot.com/o/departments%2Fit.jpg?alt=media&token=751fd97d-653f-447b-9669-1cda30302cff")
                 .placeholder(R.drawable.a3klogo)
                 .override(150,200)
                 .diskCacheStrategy(DiskCacheStrategy.SOURCE)
                 .into(it);
 
         Glide.with(Events.this)
-                .load("https://firebasestorage.googleapis.com/v0/b/rset-63188.appspot.com/o/departments%2Fmech.jpg?alt=media&token=4b515fc7-517a-4fab-814e-a1f0b70be46f")
+                .load("https://firebasestorage.googleapis.com/v0/b/rset-63188.appspot.com/o/departments%2Fmech.jpg?alt=media&token=ac76677f-b26d-4a31-82a6-76c9253678b6")
                 .placeholder(R.drawable.a3klogo)
                 .override(150,200)
                 .diskCacheStrategy(DiskCacheStrategy.SOURCE)
                 .into(mech);
 
         Glide.with(Events.this)
-                .load("https://firebasestorage.googleapis.com/v0/b/rset-63188.appspot.com/o/departments%2Fnon-tech.jpg?alt=media&token=52bbeb7a-36b7-4987-b61f-21fc5e4b33c5")
+                .load("https://firebasestorage.googleapis.com/v0/b/rset-63188.appspot.com/o/departments%2Fnon-tech.jpg?alt=media&token=2d80abc7-6a23-4c90-baa4-2cf0af0bf04d")
                 .placeholder(R.drawable.a3klogo)
                 .override(150,200)
                 .diskCacheStrategy(DiskCacheStrategy.SOURCE)
