@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#4CE4B8"
+    android:background="#000"
     tools:context="roundmelon.jv.a3k.Terrain">
     <ListView
         android:layout_width="match_parent"

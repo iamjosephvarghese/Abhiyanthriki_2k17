@@ -42,7 +42,7 @@ public class Selfie extends AppCompatActivity {
 
     public EditText name;
     public EditText mobile;
-    public EditText note;
+    public EditText clg;
 
 
 
@@ -58,7 +58,7 @@ public class Selfie extends AppCompatActivity {
 
     private String Name;
     private String Mobile;
-    private String Note;
+    private String Clg;
 
 
 
@@ -88,7 +88,7 @@ public class Selfie extends AppCompatActivity {
 
         name = (EditText) findViewById(R.id.name);
         mobile = (EditText) findViewById(R.id.mobile);
-        note = (EditText) findViewById(R.id.note);
+        clg = (EditText) findViewById(R.id.note);
 
         textView1 = (TextView)findViewById(R.id.textView1);
         textView2 = (TextView)findViewById(R.id.textView2);
@@ -103,7 +103,7 @@ public class Selfie extends AppCompatActivity {
 
         name.setTypeface(bebas);
         mobile.setTypeface(bebas);
-        note.setTypeface(bebas);
+        clg.setTypeface(bebas);
 
         mSelectImage.setTypeface(bebas);
 
@@ -124,15 +124,15 @@ public class Selfie extends AppCompatActivity {
 
                 Name = ((EditText) findViewById(R.id.name)).getText().toString();
                 Mobile = ((EditText) findViewById(R.id.mobile)).getText().toString();
-                Note = ((EditText) findViewById(R.id.note)).getText().toString();
+                Clg = ((EditText) findViewById(R.id.note)).getText().toString();
 
 
-                if (Name.length() > 0 && Mobile.length() > 0 && Note.length() > 0){
+                if (Name.length() > 0 && Mobile.length() > 0 && Clg.length() > 0){
 
 
                     metadata = new StorageMetadata.Builder()
                             .setContentType("image/jpg")
-                            .setCustomMetadata("Description", Note)
+                            .setCustomMetadata("Description", Clg)
                             .setCustomMetadata("Ph", Mobile)
                             .setCustomMetadata("Name", Name)
                             .build();
@@ -253,7 +253,7 @@ public class Selfie extends AppCompatActivity {
                     mProgressDialog.dismiss();
                     name.setText("");
                     mobile.setText("");
-                    note.setText("");
+                    clg.setText("");
                     name.requestFocus();
                 }
             }).addOnFailureListener(new OnFailureListener() {

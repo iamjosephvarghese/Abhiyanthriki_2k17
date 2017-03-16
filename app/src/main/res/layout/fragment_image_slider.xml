@@ -31,29 +31,6 @@
         android:background="#88000000"
         >
 
-        <!--<TextView
-            android:id="@+id/title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@android:color/white"
-            android:textSize="16dp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/date"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentLeft="true"
-            android:textColor="@android:color/white" />
-        <Button
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:background="@drawable/heart"
-            android:textColor="#fff"
-            android:layout_gravity="right"
-            android:id="@+id/like"/>-->
-
 
 
     </LinearLayout>

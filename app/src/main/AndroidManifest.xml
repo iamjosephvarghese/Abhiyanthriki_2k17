@@ -31,7 +31,6 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
         <activity android:name=".Youtube" />
-        <activity android:name=".Try" />
         <activity
             android:name=".Fb"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
@@ -54,12 +53,15 @@
         <activity android:name=".Deadlock" />
         <activity
             android:name=".Edit"
-            android:label="@string/title_activity_edit"
+            android:label="Home"
             android:theme="@style/AppTheme" />
         <activity android:name=".Events" />
         <activity android:name=".Web" />
         <activity android:name=".SelfieGallery" />
-        <activity android:name=".Terrain"></activity>
+        <activity android:name=".Terrain" />
+        <activity android:name=".Results" />
+        <activity android:name=".Video" />
+        <activity android:name=".Gallery"></activity>
     </application>
 
 </manifest>

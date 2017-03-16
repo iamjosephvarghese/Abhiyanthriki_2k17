@@ -1,6 +1,7 @@
 package roundmelon.jv.a3k;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -23,14 +24,21 @@ public class Terrain extends AppCompatActivity {
 
 
 
-    String pName[] = new String[61];
-    String pTime[] = new String[61];
+    String pName[] = new String[101];
+    String pTime[] = new String[101];
+    String pRank[] = new String[101];
+    String pClg[] = new String[101];
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_terrain);
+
+        Intent intent = getIntent();
+        String root = intent.getExtras().getString("root");
+        String num = intent.getExtras().getString("num");
+
 
 
 
@@ -43,11 +51,16 @@ public class Terrain extends AppCompatActivity {
 
         Firebase mRootRef = new Firebase("https://rset-63188.firebaseio.com/");
 
-        resultRef = mRootRef.child("terrainresult");
-        Firebase numberRef = mRootRef.child("terrainover");
+//        resultRef = mRootRef.child("terrainresult");
+//        Firebase numberRef = mRootRef.child("terrainover");
+
+
+        resultRef = mRootRef.child(root);
+        Firebase numberRef = mRootRef.child(num);
 
         pDialog.setMessage("Updating Data...");
         pDialog.show();
+       // pDialog.setCancelable(false);
 
 
         numberRef.addValueEventListener(new ValueEventListener() {
@@ -63,8 +76,11 @@ public class Terrain extends AppCompatActivity {
                         Log.d("DEBUG","onChildAdded");
                         String res = dataSnapshot.getValue(String.class);
                         String pa[] = res.split("-");
-                        pName[count] = pa[0];
-                        pTime[count] = pa[1];
+
+                        pRank[count] = pa[0];
+                        pName[count] = pa[1];
+                        pTime[count] = pa[2];
+                        pClg[count] = pa[3];
 
                         count++;
                         if(count == countover )
@@ -116,7 +132,7 @@ public class Terrain extends AppCompatActivity {
 
         Log.d("DEBUG","Triggered");
         TerrainList adapter2 = new
-                TerrainList(Terrain.this,pName,pTime,dummy);
+                TerrainList(Terrain.this,pName,pTime,pRank,pClg,dummy);
         listresult=(ListView)findViewById(R.id.listViewTerrain);
         listresult.setAdapter(adapter2);
 

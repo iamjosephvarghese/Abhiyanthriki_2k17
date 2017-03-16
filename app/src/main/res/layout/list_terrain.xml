@@ -2,16 +2,32 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#000"
     android:padding="10dp">
 
+<LinearLayout
+    android:layout_width="match_parent"
+    android:background="@drawable/button_shape_green"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/playeRank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="hello"
+        android:textColor="#fff"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textSize="30dp" />
 
     <TextView
         android:id="@+id/playerName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="hello"
-        android:background="#000"
         android:textColor="#fff"
+        android:gravity="center_horizontal"
         android:textStyle="bold"
         android:textSize="20dp" />
 
@@ -19,9 +35,21 @@
         android:id="@+id/playerTime"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#000"
-        android:text="TextView"
+        android:text="hello"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
         android:textColor="#fff"
         android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/playerClg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="hello"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:textSize="15dp" />
+    </LinearLayout>
 
 </LinearLayout>

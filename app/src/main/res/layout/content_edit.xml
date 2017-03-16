@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="#000"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="roundmelon.jv.a3k.Edit"
@@ -14,45 +15,85 @@
         android:id="@+id/ll"
         android:layout_width="395dp"
         android:layout_height="300dp"
-        tools:layout_editor_absoluteY="0dp"
-        tools:layout_editor_absoluteX="8dp">
+        tools:layout_editor_absoluteX="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp">
+
         <ViewFlipper
             android:id="@+id/bckgrndViewFlipper1"
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="fill_parent">
+
+            <ImageView
+                android:id="@+id/bckgrndImageView8"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ce" />
 
             <ImageView
                 android:id="@+id/bckgrndImageView7"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:scaleType="fitCenter"
-                android:src="@drawable/a3klogo" />
+                android:src="@drawable/cs" />
+
             <ImageView
                 android:id="@+id/bckgrndImageView6"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:scaleType="fitCenter"
-                android:src="@drawable/a3k_long" />
+                android:src="@drawable/ec" />
+
             <ImageView
                 android:id="@+id/bckgrndImageView5"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:scaleType="fitCenter"
-                android:src="@drawable/a3klogo" />
+                android:src="@drawable/eee" />
+
             <ImageView
                 android:id="@+id/bckgrndImageView4"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:scaleType="fitCenter"
-                android:src="@drawable/a3k_long" />
+                android:src="@drawable/it" />
+
             <ImageView
                 android:id="@+id/bckgrndImageView3"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:scaleType="fitCenter"
-                android:src="@drawable/a3klogo" />
+                android:src="@drawable/mech" />
+
+            <ImageView
+                android:id="@+id/bckgrndImageView10"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/non_tech" />
+
+            <ImageView
+                android:id="@+id/bckgrndImageView9"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/aei" />
 
         </ViewFlipper>
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="344dp"
+        android:layout_height="187dp"
+        app:srcCompat="@drawable/a3klogo"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.0" />
 
 </android.support.constraint.ConstraintLayout>

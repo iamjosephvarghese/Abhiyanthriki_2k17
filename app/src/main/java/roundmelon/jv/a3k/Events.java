@@ -6,9 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
 
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.load.engine.DiskCacheStrategy;
-
 public class Events extends AppCompatActivity {
 
     private ImageView ae;
@@ -46,61 +43,64 @@ look site and update
         gen = (ImageView)findViewById(R.id.gen);
 
 
-        Glide.with(Events.this)
-                .load("https://firebasestorage.googleapis.com/v0/b/rset-63188.appspot.com/o/departments%2Faei.jpg?alt=media&token=ede3a568-9d3c-4391-b8e9-cf1abf54a525")
-                .placeholder(R.drawable.a3klogo)
-                .override(150,200)
-                .diskCacheStrategy(DiskCacheStrategy.SOURCE)
-                .into(ae);
 
-        Glide.with(Events.this)
-                .load("https://firebasestorage.googleapis.com/v0/b/rset-63188.appspot.com/o/departments%2Fce.jpg?alt=media&token=cdd2143d-a024-4d75-9a3a-87ba9bb90530")
-                .placeholder(R.drawable.a3klogo)
-                .override(150,200)
-                .diskCacheStrategy(DiskCacheStrategy.SOURCE)
-                .into(civil);
 
-        Glide.with(Events.this)
-                .load("https://firebasestorage.googleapis.com/v0/b/rset-63188.appspot.com/o/departments%2Fcs.jpg?alt=media&token=96dbc3c6-ea1c-48ba-aa3c-42ea2b728f3c")
-                .placeholder(R.drawable.a3klogo)
-                .override(150,200)
-                .diskCacheStrategy(DiskCacheStrategy.SOURCE)
-                .into(cs);
 
-        Glide.with(Events.this)
-                .load("https://firebasestorage.googleapis.com/v0/b/rset-63188.appspot.com/o/departments%2Fec.jpg?alt=media&token=9c100275-bb85-4123-aff4-aaeeed957cd9")
-                .placeholder(R.drawable.a3klogo)
-                .override(150,200)
-                .diskCacheStrategy(DiskCacheStrategy.SOURCE)
-                .into(ec);
-
-        Glide.with(Events.this)
-                .load("https://firebasestorage.googleapis.com/v0/b/rset-63188.appspot.com/o/departments%2Feee.jpg?alt=media&token=13fd22c0-5279-4f6a-844f-0e44c7301a3e")
-                .placeholder(R.drawable.a3klogo)
-                .override(150,200)
-                .diskCacheStrategy(DiskCacheStrategy.SOURCE)
-                .into(eee);
-
-        Glide.with(Events.this)
-                .load("https://firebasestorage.googleapis.com/v0/b/rset-63188.appspot.com/o/departments%2Fit.jpg?alt=media&token=751fd97d-653f-447b-9669-1cda30302cff")
-                .placeholder(R.drawable.a3klogo)
-                .override(150,200)
-                .diskCacheStrategy(DiskCacheStrategy.SOURCE)
-                .into(it);
-
-        Glide.with(Events.this)
-                .load("https://firebasestorage.googleapis.com/v0/b/rset-63188.appspot.com/o/departments%2Fmech.jpg?alt=media&token=ac76677f-b26d-4a31-82a6-76c9253678b6")
-                .placeholder(R.drawable.a3klogo)
-                .override(150,200)
-                .diskCacheStrategy(DiskCacheStrategy.SOURCE)
-                .into(mech);
-
-        Glide.with(Events.this)
-                .load("https://firebasestorage.googleapis.com/v0/b/rset-63188.appspot.com/o/departments%2Fnon-tech.jpg?alt=media&token=2d80abc7-6a23-4c90-baa4-2cf0af0bf04d")
-                .placeholder(R.drawable.a3klogo)
-                .override(150,200)
-                .diskCacheStrategy(DiskCacheStrategy.SOURCE)
-                .into(gen);
+//        Glide.with(Events.this)
+//                .load("https://firebasestorage.googleapis.com/v0/b/rset-63188.appspot.com/o/departments%2Faei.jpg?alt=media&token=ede3a568-9d3c-4391-b8e9-cf1abf54a525")
+//                .placeholder(R.drawable.a3klogo)
+//                .override(150,200)
+//                .diskCacheStrategy(DiskCacheStrategy.SOURCE)
+//                .into(ae);
+//
+//        Glide.with(Events.this)
+//                .load("https://firebasestorage.googleapis.com/v0/b/rset-63188.appspot.com/o/departments%2Fce.jpg?alt=media&token=cdd2143d-a024-4d75-9a3a-87ba9bb90530")
+//                .placeholder(R.drawable.a3klogo)
+//                .override(150,200)
+//                .diskCacheStrategy(DiskCacheStrategy.SOURCE)
+//                .into(civil);
+//
+//        Glide.with(Events.this)
+//                .load("https://firebasestorage.googleapis.com/v0/b/rset-63188.appspot.com/o/departments%2Fcs.jpg?alt=media&token=96dbc3c6-ea1c-48ba-aa3c-42ea2b728f3c")
+//                .placeholder(R.drawable.a3klogo)
+//                .override(150,200)
+//                .diskCacheStrategy(DiskCacheStrategy.SOURCE)
+//                .into(cs);
+//
+//        Glide.with(Events.this)
+//                .load("https://firebasestorage.googleapis.com/v0/b/rset-63188.appspot.com/o/departments%2Fec.jpg?alt=media&token=9c100275-bb85-4123-aff4-aaeeed957cd9")
+//                .placeholder(R.drawable.a3klogo)
+//                .override(150,200)
+//                .diskCacheStrategy(DiskCacheStrategy.SOURCE)
+//                .into(ec);
+//
+//        Glide.with(Events.this)
+//                .load("https://firebasestorage.googleapis.com/v0/b/rset-63188.appspot.com/o/departments%2Feee.jpg?alt=media&token=13fd22c0-5279-4f6a-844f-0e44c7301a3e")
+//                .placeholder(R.drawable.a3klogo)
+//                .override(150,200)
+//                .diskCacheStrategy(DiskCacheStrategy.SOURCE)
+//                .into(eee);
+//
+//        Glide.with(Events.this)
+//                .load("https://firebasestorage.googleapis.com/v0/b/rset-63188.appspot.com/o/departments%2Fit.jpg?alt=media&token=751fd97d-653f-447b-9669-1cda30302cff")
+//                .placeholder(R.drawable.a3klogo)
+//                .override(150,200)
+//                .diskCacheStrategy(DiskCacheStrategy.SOURCE)
+//                .into(it);
+//
+//        Glide.with(Events.this)
+//                .load("https://firebasestorage.googleapis.com/v0/b/rset-63188.appspot.com/o/departments%2Fmech.jpg?alt=media&token=ac76677f-b26d-4a31-82a6-76c9253678b6")
+//                .placeholder(R.drawable.a3klogo)
+//                .override(150,200)
+//                .diskCacheStrategy(DiskCacheStrategy.SOURCE)
+//                .into(mech);
+//
+//        Glide.with(Events.this)
+//                .load("https://firebasestorage.googleapis.com/v0/b/rset-63188.appspot.com/o/departments%2Fnon-tech.jpg?alt=media&token=2d80abc7-6a23-4c90-baa4-2cf0af0bf04d")
+//                .placeholder(R.drawable.a3klogo)
+//                .override(150,200)
+//                .diskCacheStrategy(DiskCacheStrategy.SOURCE)
+//                .into(gen);
 
 
 

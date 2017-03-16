@@ -1,5 +1,6 @@
 package roundmelon.jv.a3k;
 
+import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 
@@ -12,7 +13,33 @@ public class Youtube extends YouTubeBaseActivity
         implements YouTubePlayer.OnInitializedListener {
 
     private String GOOGLE_API_KEY = "AIzaSyD4i1r8UnyexUNyGs_r-mFNNfndsl-PEG0";
-    private String YOUTUBE_VIDEO_ID = "8IfRM-G-8Xo";
+
+
+    /*change api key
+
+
+
+    dont forget  to
+
+
+
+    change
+
+
+
+    it
+
+
+    */
+
+
+
+
+
+
+
+
+    private String YOUTUBE_VIDEO_ID;
     //private String url;
    // private String YOUTUBE_VIDEO_ID;
 
@@ -22,6 +49,11 @@ public class Youtube extends YouTubeBaseActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_youtube);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+
+
+        Intent intent = getIntent();
+        YOUTUBE_VIDEO_ID = intent.getExtras().getString("videourl");
+
 
         //Bundle bundle = getIntent().getExtras();
         //YOUTUBE_VIDEO_ID = bundle.getString("videourl");

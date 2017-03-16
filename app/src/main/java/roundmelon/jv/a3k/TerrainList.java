@@ -18,13 +18,17 @@ public class TerrainList extends ArrayAdapter<String> {
 
     private final String[] pName;
     private final String[] pTime;
+    private final String[] pRank;
+    private final String[] pClg;
     public TerrainList(Activity context,
-                      String[] pName,String[] pTime ,String[] dummy) {
+                      String[] pName,String[] pTime,String[] pRank ,String[] pClg,String[] dummy) {
         super(context, R.layout.list_terrain, dummy);
         this.context = context;
 
         this.pName = pName;
         this.pTime = pTime;
+        this.pRank = pRank;
+        this.pClg = pClg;
 
     }
     @Override
@@ -34,6 +38,8 @@ public class TerrainList extends ArrayAdapter<String> {
 
         TextView playerName = (TextView) rowView.findViewById(R.id.playerName);
         TextView playerTime = (TextView)rowView.findViewById(R.id.playerTime);
+        TextView playerRank = (TextView)rowView.findViewById(R.id.playeRank);
+        TextView playerClg = (TextView)rowView.findViewById(R.id.playerClg);
 //        ImageView imageView1 = (ImageView) rowView.findViewById(R.id.img1);
 //
 //        TextView txt2 = (TextView) rowView.findViewById(R.id.txt2result);
@@ -44,6 +50,8 @@ public class TerrainList extends ArrayAdapter<String> {
 //        TextView showdate = (TextView) rowView.findViewById(R.id.date);
         playerName.setText(pName[position]);
         playerTime.setText(pTime[position]);
+        playerRank.setText(pRank[position]);
+        playerClg.setText(pClg[position]);
 
 
 

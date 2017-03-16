@@ -1,9 +1,8 @@
 package roundmelon.jv.a3k;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
-import android.support.design.widget.Snackbar;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -11,7 +10,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ViewFlipper;
@@ -47,14 +45,15 @@ public class Edit extends AppCompatActivity
 
 
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+//        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+//        fab.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent selfiIntent = new Intent(Edit.this,Selfie.class);
+//                startActivity(selfiIntent);
+//;
+//            }
+//        });
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -104,19 +103,62 @@ public class Edit extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
+        if (id == R.id.nav_selfie) {
+            Intent selfieIntent = new Intent(Edit.this,Selfie.class);
+            startActivity(selfieIntent);
 
-        } else if (id == R.id.nav_gallery) {
-
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
+        } else if (id == R.id.nav_selfiegallery) {
+            Intent galleryIntent = new Intent(Edit.this,SelfieGallery.class);
+            startActivity(galleryIntent);
 
         }
+//        else if (id == R.id.nav_live) {
+//            ///
+//
+//        } else if (id == R.id.nav_updates) {
+//
+//            //
+//        }
+        else if (id == R.id.nav_events) {
+
+            Intent eventIntent = new Intent(Edit.this,Events.class);
+            startActivity(eventIntent);
+        } else if (id == R.id.nav_rank) {
+            Intent rankIntent = new Intent(Edit.this,Results.class);
+            startActivity(rankIntent);
+
+        }else if (id == R.id.nav_register) {
+            String link = "https://a3k.in/reg";
+            Intent regIntent = new Intent(Edit.this,Web.class);
+            regIntent.putExtra("weblink",link);
+            startActivity(regIntent);
+
+        }else if (id == R.id.nav_badge) {
+            Intent fbIntent = new Intent(Edit.this,Fb.class);
+            startActivity(fbIntent);
+
+        }
+//        else if (id == R.id.nav_share) {
+//
+//            //share intent
+//
+//        }else if (id == R.id.nav_about) {
+//
+//            //make a new activity
+//
+//        }
+//        else if (id == R.id.nav_video) {
+//
+//            Intent videoIntent = new Intent(Edit.this,Video.class);
+//            startActivity(videoIntent);
+//
+//        }
+        else if (id == R.id.nav_gallery) {
+
+        Intent videoIntent = new Intent(Edit.this,Gallery.class);
+        startActivity(videoIntent);
+
+    }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

@@ -2,35 +2,80 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <group android:checkableBehavior="single">
+
+
         <item
-            android:id="@+id/nav_camera"
+            android:id="@+id/nav_events"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Events"
+            />
+
+        <item
+            android:id="@+id/nav_register"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Registration"
+           />
+        <item
+            android:id="@+id/nav_badge"
+            android:icon="@drawable/ic_menu_share"
+            android:title="Create A3K Badge"
+           />
+        <item
+            android:id="@+id/nav_selfie"
             android:icon="@drawable/ic_menu_camera"
-            android:title="Import" />
+            android:title="Upload Selfie"
+           />
+
+        <item
+            android:id="@+id/nav_selfiegallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Selfie Gallery"
+            />
         <item
             android:id="@+id/nav_gallery"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
-        <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
-        <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
-    </group>
+            android:title="Gallery"
+           />
 
-    <item android:title="Communicate">
-        <menu>
-            <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
-            <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
-        </menu>
-    </item>
+        <!--<item-->
+            <!--android:id="@+id/nav_live"-->
+            <!--android:icon="@drawable/ic_menu_gallery"-->
+            <!--android:title="Live Now"-->
+            <!--android:textColor="#fff"/>-->
+
+        <!--<item-->
+            <!--android:id="@+id/nav_updates"-->
+            <!--android:icon="@drawable/ic_menu_share"-->
+            <!--android:title="Live Updates"-->
+            <!--android:textColor="#fff"/>-->
+
+
+        <item
+            android:id="@+id/nav_rank"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Live Ranking"
+            />
+
+
+        <!--<item-->
+            <!--android:id="@+id/nav_video"-->
+            <!--android:icon="@drawable/ic_menu_gallery"-->
+            <!--android:title="Videos"-->
+           <!--/>-->
+
+
+
+            <!--<item-->
+                <!--android:id="@+id/nav_share"-->
+                <!--android:icon="@drawable/ic_menu_send"-->
+                <!--android:title="Share"-->
+                <!--android:textColor="#fff"/>-->
+
+            <!--<item-->
+                <!--android:id="@+id/nav_about"-->
+                <!--android:icon="@drawable/ic_menu_share"-->
+                <!--android:title="About"-->
+                <!--android:textColor="#fff"/>-->
+    </group>
 
 </menu>

@@ -31,7 +31,7 @@
                 android:layout_marginLeft="40dp"
                 android:layout_marginTop="16dp"
                 android:background="#000"
-                android:src="@drawable/a3klogo"
+                android:src="@drawable/aei"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -42,7 +42,7 @@
                 android:layout_marginRight="40dp"
                 android:layout_marginTop="8dp"
                 android:background="#000"
-                android:src="@drawable/a3klogo"
+                android:src="@drawable/ce"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/ec" />
 
@@ -53,7 +53,7 @@
                 android:layout_marginLeft="40dp"
                 android:layout_marginTop="8dp"
                 android:background="#000"
-                android:src="@drawable/a3klogo"
+                android:src="@drawable/cs"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/it" />
 
@@ -64,7 +64,7 @@
                 android:layout_marginRight="40dp"
                 android:layout_marginTop="-408dp"
                 android:background="#000"
-                android:src="@drawable/a3klogo"
+                android:src="@drawable/ec"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/gen" />
 
@@ -76,7 +76,7 @@
                 android:layout_marginRight="40dp"
                 android:layout_marginTop="8dp"
                 android:background="#000"
-                android:src="@drawable/a3klogo"
+                android:src="@drawable/eee"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/civil" />
@@ -88,7 +88,7 @@
                 android:layout_marginLeft="40dp"
                 android:layout_marginTop="8dp"
                 android:background="#000"
-                android:src="@drawable/a3klogo"
+                android:src="@drawable/it"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/ae" />
 
@@ -100,7 +100,7 @@
                 android:layout_marginLeft="40dp"
                 android:layout_marginTop="8dp"
                 android:background="#000"
-                android:src="@drawable/a3klogo"
+                android:src="@drawable/mech"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/cs" />
@@ -112,7 +112,7 @@
                 android:layout_marginRight="40dp"
                 android:layout_marginTop="16dp"
                 android:background="#000"
-                android:src="@drawable/a3klogo"
+                android:src="@drawable/non_tech"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
