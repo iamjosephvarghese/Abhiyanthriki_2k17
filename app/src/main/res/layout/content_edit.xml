@@ -12,7 +12,6 @@
 
 
     <LinearLayout
-        android:id="@+id/ll"
         android:layout_width="wrap_content"
         android:layout_height="300dp"
         android:layout_alignParentBottom="true"
@@ -25,56 +24,48 @@
             android:layout_height="fill_parent">
 
             <ImageView
-                android:id="@+id/bckgrndImageView6"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:scaleType="fitCenter"
                 android:src="@drawable/ec" />
 
             <ImageView
-                android:id="@+id/bckgrndImageView5"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:scaleType="fitCenter"
                 android:src="@drawable/eee" />
 
             <ImageView
-                android:id="@+id/bckgrndImageView4"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:scaleType="fitCenter"
                 android:src="@drawable/it" />
 
             <ImageView
-                android:id="@+id/bckgrndImageView3"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:scaleType="fitCenter"
                 android:src="@drawable/mech" />
 
             <ImageView
-                android:id="@+id/bckgrndImageView10"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:scaleType="fitCenter"
                 android:src="@drawable/non_tech" />
 
             <ImageView
-                android:id="@+id/bckgrndImageView9"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:scaleType="fitCenter"
                 android:src="@drawable/aei" />
 
             <ImageView
-                android:id="@+id/bckgrndImageView8"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:scaleType="fitCenter"
                 android:src="@drawable/ce" />
 
             <ImageView
-                android:id="@+id/bckgrndImageView7"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:scaleType="fitCenter"
@@ -84,7 +75,6 @@
     </LinearLayout>
 
     <ImageView
-        android:id="@+id/imageView3"
         android:layout_width="344dp"
         android:layout_height="187dp"
         app:srcCompat="@drawable/a3klogo"
