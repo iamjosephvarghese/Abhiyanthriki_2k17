@@ -174,12 +174,12 @@ public class Edit extends AppCompatActivity
 //            //make a new activity
 //
 //        }
-//        else if (id == R.id.nav_video) {
-//
-//            Intent videoIntent = new Intent(Edit.this,Video.class);
-//            startActivity(videoIntent);
-//
-//        }
+        else if (id == R.id.nav_video) {
+
+            Intent videoIntent = new Intent(Edit.this,Video.class);
+            startActivity(videoIntent);
+
+        }
         else if (id == R.id.nav_gallery) {
 
         Intent videoIntent = new Intent(Edit.this,Gallery.class);
