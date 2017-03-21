@@ -34,9 +34,12 @@ import com.google.firebase.storage.UploadTask;
 public class Selfie extends AppCompatActivity {
 
     private Button mSelectImage;
+    
     private StorageReference mStorageRef;
+    
     private DatabaseReference mDatabase;
     private static final int GALLERY_INTENT = 2;
+    
     private ProgressDialog mProgressDialog;
 
 
