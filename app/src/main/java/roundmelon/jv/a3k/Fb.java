@@ -22,6 +22,8 @@ public class Fb extends AppCompatActivity {
 
     private CallbackManager callbackManager;
     private AccessTokenTracker accessTokenTracker;
+
+
     private ProfileTracker profileTracker;
 
     //Facebook login button
@@ -59,6 +61,7 @@ public class Fb extends AppCompatActivity {
             }
         };
         accessTokenTracker.startTracking();
+        
         profileTracker.startTracking();
 
 
